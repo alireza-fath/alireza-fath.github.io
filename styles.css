@@ -778,6 +778,50 @@ section {
   color: var(--text-dark);
 }
 
+.mentoring {
+  margin-top: var(--spacing-3xl);
+}
+
+.mentoring h3 {
+  font-size: 1.75rem;
+  margin-bottom: var(--spacing-lg);
+  color: var(--text-dark);
+  text-align: center;
+}
+
+.mentoring-content p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--text-light);
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.mentoring-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-lg);
+}
+
+.stat-item {
+  background-color: white;
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 4px var(--shadow-light);
+  text-align: center;
+}
+
+.stat-item h4 {
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-sm);
+  font-size: 1.25rem;
+}
+
+.stat-item p {
+  margin-bottom: var(--spacing-xs);
+  color: var(--text-light);
+}
+
 /* ===== CONTACT SECTION ===== */
 .contact {
   background-color: var(--background-white);
@@ -1401,6 +1445,10 @@ button:focus,
   }
   
   .certificates-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .mentoring-stats {
     grid-template-columns: 1fr;
   }
   
