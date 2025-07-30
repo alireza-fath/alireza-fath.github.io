@@ -257,6 +257,17 @@ section {
   align-items: center;
 }
 
+.profile-photo {
+    width: 180px;         /* Adjust size as needed */
+    height: 180px;        /* Adjust size as needed */
+    object-fit: cover;    /* Makes the image fill and crop if needed */
+    border-radius: 50%;   /* Makes it a circle */
+    border: 3px solid #fff; /* Optional: white border */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Optional: shadow */
+    display: block;
+    margin: 0 auto;
+}
+
 .hero-title {
   font-size: 3.5rem;
   font-weight: 700;
