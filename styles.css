@@ -252,20 +252,20 @@ section {
 
 .hero-content {
   display: grid;
-  grid-template-columns: 1fr 400px;
+  grid-template-columns: 1fr 460px;
   gap: var(--spacing-3xl);
   align-items: center;
 }
 
 .profile-photo {
-    width: 280px;         /* Increased from 180px */
-    height: 280px;        /* Increased from 180px */
-    object-fit: cover;    /* Makes the image fill and crop if needed */
-    border-radius: 50%;   /* Makes it a circle */
-    border: 3px solid #fff; /* Optional: white border */
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Optional: shadow */
-    display: block;
-    margin: 0 auto;
+  width: 360px;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: block;
+  margin: 0 auto;
 }
 
 .hero-title {
@@ -338,6 +338,29 @@ section {
   grid-template-columns: 2fr 1fr;
   gap: var(--spacing-3xl);
   align-items: start;
+}
+
+/* Tidy one-column About layout */
+.about-content.one-column {
+  grid-template-columns: 1fr;
+  max-width: 820px;
+  margin: 0 auto;
+  gap: var(--spacing-lg);
+}
+
+.about-block {
+  background: var(--background-light);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--primary-color);
+}
+
+.about-block h3 {
+  margin-bottom: var(--spacing-sm);
+}
+
+.awards-compact li {
+  margin-bottom: var(--spacing-sm);
 }
 
 .about-text {
