@@ -1,14 +1,14 @@
 # Jekyll Configuration for Dr. Alireza Fath's Academic Website
 
 # Site settings
-title: "Dr. Alireza Fath"
+title: "Alireza Fath, Ph.D. — University of Vermont"
 description: "Assistant Professor of Mechanical Engineering at University of Vermont"
 url: "https://drfath.com"
 baseurl: ""
 
 # Author information
 author:
-  name: "Dr. Alireza Fath"
+  name: "Alireza Fath, Ph.D."
   email: "alireza.fath@uvm.edu"
   university: "University of Vermont"
   department: "Mechanical Engineering"
