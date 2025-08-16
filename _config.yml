@@ -1,0 +1,73 @@
+# Jekyll Configuration for Dr. Alireza Fath's Academic Website
+
+# Site settings
+title: "Dr. Alireza Fath"
+description: "Assistant Professor of Mechanical Engineering at University of Vermont"
+url: "https://drfath.com"
+baseurl: ""
+
+# Author information
+author:
+  name: "Dr. Alireza Fath"
+  email: "alireza.fath@uvm.edu"
+  university: "University of Vermont"
+  department: "Mechanical Engineering"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Jekyll plugins (GitHub Pages compatible)
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - DEVELOPMENT.md
+  - start-dev.sh
+  - index.html.backup
+
+# Include files
+include:
+  - _pages
+
+# Collections (for future expansion)
+collections:
+  publications:
+    output: true
+    permalink: /:collection/:name/
+  projects:
+    output: true
+    permalink: /:collection/:name/
+
+# Default layouts
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "default"
+
+# Development settings
+sass:
+  style: compressed
+
+# GitHub Pages settings
+github:
+  repository_url: "https://github.com/alireza-fath/alireza-fath.github.io"
